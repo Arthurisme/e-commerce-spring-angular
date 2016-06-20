@@ -85,7 +85,7 @@ public class HomeController {
 
 
     @RequestMapping(value="/admin/productInventory/addProduct", method = RequestMethod.POST)
-    public String  addProductPost(Model model, @ModelAttribute Product product , BindingResult result,
+    public String  addProductPost(Model model, @Valid @ModelAttribute("product") Product product , BindingResult result,
                                   HttpServletRequest request ) {
 //        Product product = new Product();
 
@@ -149,12 +149,12 @@ public class HomeController {
     }
 
     @RequestMapping(value="/admin/productInventory/editProduct", method = RequestMethod.POST)
-    public String  editProductPost(Model model, @ModelAttribute Product product , BindingResult result,
+    public String  editProductPost(Model model, @Valid @ModelAttribute("product") Product product, BindingResult result,
                                   HttpServletRequest request ) {
 //        Product product = new Product();
 
         if(result.hasErrors()){
-            return "addProduct";
+            return "editProduct";
         }
 
 
