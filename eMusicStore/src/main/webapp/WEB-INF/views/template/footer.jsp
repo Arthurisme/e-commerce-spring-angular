@@ -5,6 +5,8 @@
 </footer>
 
 </div><!-- /.container -->
+</div>
+
 
 
 <!-- Bootstrap core JavaScript
