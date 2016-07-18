@@ -5,19 +5,17 @@ import com.emusicstore.model.Product;
 import java.util.List;
 
 /**
- * Created by Arthur on 2016-06-11.
+ * Created by Le on 1/6/2016.
  */
 public interface ProductDao {
+
+    List<Product> getProductList();
+
+    Product getProductById(int id);
 
     void addProduct(Product product);
 
     void editProduct(Product product);
 
-    Product getProductById(String id);
-
-    List<Product> getAllProducts();
-
-    void deleteProduct(String id);
-
-
+    void deleteProduct(Product product);
 }
