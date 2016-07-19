@@ -18,12 +18,12 @@
         <h3>Basic Info</h3>
 
         <div class="form-group">
-            <label for="name">Customer Name</label>
+            <label for="name">Customer Name</label><form:errors path="customerName" cssStyle="color:#ff0000" />
             <form:input path="customerName" id="name" class="form-Control" />
         </div>
 
         <div class="form-group">
-            <label for="email">Customer email</label>
+            <label for="email">Customer email</label><span style="color:#ff0000">${emailMsg}</span><form:errors path="customerEmail" cssStyle="color:#ff0000" />
             <form:input path="customerEmail" id="email" class="form-Control" />
         </div>
 
@@ -33,12 +33,12 @@
         </div>
 
         <div class="form-group">
-            <label for="username">Customer username</label>
+            <label for="username">Customer username</label><span style="color:#ff0000">${usernameMsg}</span><form:errors path="username" cssStyle="color:#ff0000" />
             <form:input path="username" id="username" class="form-Control" />
         </div>
 
         <div class="form-group">
-            <label for="password">Customer password</label>
+            <label for="password">Customer password</label><form:errors path="password" cssStyle="color:#ff0000" />
             <form:password path="password" id="password" class="form-Control" />
         </div>
 
