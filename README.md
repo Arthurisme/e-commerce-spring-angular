@@ -3,9 +3,9 @@
 Tutorial project:
 eMusicStore
 
-Add admin data into database before use this web app:
+Admin data into database before use this web app:
 
- Open phpMyAdmin or inteliJ idea data window:
+ (If non users and authorities been created in database)Open phpMyAdmin or inteliJ idea data window:
  Add database for user and password -> sql spring security database schema
      
       create table users(
