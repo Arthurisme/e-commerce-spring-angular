@@ -4,11 +4,11 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 /**
- * Created by Arthur on 2016-07-13.
+ * Created by Le on 1/24/2016.
  */
-@Entity
-public class CustomerOrder implements Serializable {
 
+@Entity
+public class CustomerOrder implements Serializable{
 
     private static final long serialVersionUID = 2983360377227484514L;
 
@@ -16,18 +16,16 @@ public class CustomerOrder implements Serializable {
     @GeneratedValue
     private int customerOrderId;
 
-
     @OneToOne
-    @JoinColumn(name="cartId")
+    @JoinColumn(name = "cartId")
     private Cart cart;
 
-
     @OneToOne
-    @JoinColumn(name="customerId")
+    @JoinColumn(name = "customerId")
     private Customer customer;
 
     @OneToOne
-    @JoinColumn(name="billingAddressId")
+    @JoinColumn(name = "billingAddressId")
     private BillingAddress billingAddress;
 
     @OneToOne

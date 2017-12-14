@@ -1,22 +1,16 @@
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<%@include file="/WEB-INF/views/template/header.jsp"%>
+<%@taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@include file="/WEB-INF/views/template/header.jsp" %>
 
 
 <div class="container-wrapper">
     <div class="container">
-
         <div class="page-header">
             <h1>Customer</h1>
 
-            <p class="lead">Customer details:</p>
+            <p class="lead">Customer Details</p>
         </div>
 
-
-
-        <form:form   commandName="order"  class="form-horizontal">
-
-
-
+        <form:form commandName="order" class="form-horizaontal">
 
         <h3>Shipping Address</h3>
 
@@ -50,22 +44,13 @@
             <form:input path="cart.customer.shippingAddress.zipCode" id="shippingZip" class="form-Control"/>
         </div>
 
-
         <input type="hidden" name="_flowExecutionKey" />
 
-
         <br><br>
-
-        <Button class="btn btn-default" name="_eventId_backToCollectCustomerInfo">Back</Button>
+        <button class="btn btn-default" name="_eventId_backToCollectCustomerInfo">Back</button>
         <input type="submit" value="Next" class="btn btn-default" name="_eventId_shippingDetailCollected" />
-        <Button class="btn btn-default" name="_eventId_cancel">Cancel</Button>
-
-
-
-
+        <button class="btn btn-default" name="_eventId_cancel">Cancel</button>
         </form:form>
-
-
 
 
         <%@include file="/WEB-INF/views/template/footer.jsp" %>

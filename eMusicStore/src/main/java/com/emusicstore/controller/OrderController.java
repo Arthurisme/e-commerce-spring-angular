@@ -5,20 +5,17 @@ import com.emusicstore.model.Customer;
 import com.emusicstore.model.CustomerOrder;
 import com.emusicstore.service.CartService;
 import com.emusicstore.service.CustomerOrderService;
-import com.emusicstore.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
- * Created by Arthur on 2016-07-16.
+ * Created by Le on 1/25/2016.
  */
+
 @Controller
 public class OrderController {
-
-    @Autowired
-    private CustomerService customerService;
 
     @Autowired
     private CartService cartService;
@@ -27,19 +24,17 @@ public class OrderController {
     private CustomerOrderService customerOrderService;
 
     @RequestMapping("/order/{cartId}")
-    public String orderPage (@PathVariable(value="cartId") int cartId){
-
-        Cart cart = cartService.getCartById(cartId);
+    public String createOrder(@PathVariable("cartId") int cartId) {
+        CustomerOrder customerOrder = new CustomerOrder();
+        Cart cart=cartService.getCartById(cartId);
+        customerOrder.setCart(cart);
 
         Customer customer = cart.getCustomer();
-
-        CustomerOrder customerOrder = new CustomerOrder();
-        customerOrder.setCart(cartService.getCartById(cartId));
         customerOrder.setCustomer(customer);
         customerOrder.setBillingAddress(customer.getBillingAddress());
         customerOrder.setShippingAddress(customer.getShippingAddress());
-        customerOrderService.addCustomerOrder(customerOrder);
 
+        customerOrderService.addCustomerOrder(customerOrder);
 
         return "redirect:/checkout?cartId="+cartId;
     }

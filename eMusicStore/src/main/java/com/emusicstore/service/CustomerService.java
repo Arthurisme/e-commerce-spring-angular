@@ -5,7 +5,7 @@ import com.emusicstore.model.Customer;
 import java.util.List;
 
 /**
- * Created by Arthur on 2016-07-14.
+ * Created by Le on 1/25/2016.
  */
 public interface CustomerService {
 

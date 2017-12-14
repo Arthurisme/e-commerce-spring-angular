@@ -1,39 +1,33 @@
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<%@include file="/WEB-INF/views/template/header.jsp"%>
+<%@taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@include file="/WEB-INF/views/template/header.jsp" %>
 
 
 <div class="container-wrapper">
     <div class="container">
-
         <div class="page-header">
             <h1>Customer</h1>
 
-            <p class="lead">Customer details:</p>
+            <p class="lead">Customer Details</p>
         </div>
 
-
-
-        <form:form   commandName="order"  class="form-horizontal">
+        <form:form commandName="order" class="form-horizaontal">
 
         <h3>Basic Info</h3>
 
         <div class="form-group">
-            <label for="name">Customer Name</label>
-            <form:input path="cart.customer.customerName" id="name" class="form-Control" />
+            <label for="name">Name</label>
+            <form:input path="cart.customer.customerName" id="name" class="form-Control"/>
         </div>
 
         <div class="form-group">
-            <label for="email">Customer email</label>
-            <form:input path="cart.customer.customerEmail" id="email" class="form-Control" />
+            <label for="email">Email</label>
+            <form:input path="cart.customer.customerEmail" id="email" class="form-Control"/>
         </div>
 
         <div class="form-group">
-            <label for="phone">Customer Phone</label>
-            <form:input path="cart.customer.customerPhone" id="phone" class="form-Control" />
+            <label for="phone">Phone</label>
+            <form:input path="cart.customer.customerPhone" id="phone" class="form-Control"/>
         </div>
-
-
-
 
         <h3>Billing Address</h3>
 
@@ -67,22 +61,12 @@
             <form:input path="cart.customer.billingAddress.zipCode" id="billingZip" class="form-Control"/>
         </div>
 
-
         <input type="hidden" name="_flowExecutionKey" />
 
-
         <br><br>
-
-
         <input type="submit" value="Next" class="btn btn-default" name="_eventId_customerInfoCollected" />
-        <Button class="btn btn-default" name="_eventId_cancel">Cancel</Button>
-
-
-
-
+        <button class="btn btn-default" name="_eventId_cancel">Cancel</button>
         </form:form>
-
-
 
 
         <%@include file="/WEB-INF/views/template/footer.jsp" %>

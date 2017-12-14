@@ -8,7 +8,7 @@ cartApp.controller("cartCtrl", function ($scope, $http){
 
     $scope.refreshCart = function () {
         $http.get('/eMusicStore/rest/cart/'+$scope.cartId).success(function (data) {
-            $scope.cart=data;
+           $scope.cart=data;
         });
     };
 

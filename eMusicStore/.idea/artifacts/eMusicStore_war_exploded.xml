@@ -8,8 +8,8 @@
           <element id="module-output" name="eMusicStore" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Spring MVC-4.2.6.RELEASE" />
-          <element id="library" level="project" name="Spring-4.2.6.RELEASE" />
+          <element id="library" level="project" name="Spring MVC-4.2.4.RELEASE" />
+          <element id="library" level="project" name="Spring-4.2.4.RELEASE" />
           <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
           <element id="library" level="project" name="Maven: taglibs:standard:1.1.2" />
           <element id="library" level="project" name="Maven: antlr:antlr:2.7.7" />
@@ -54,6 +54,7 @@
           <element id="library" level="project" name="Maven: org.springframework.webflow:spring-js-resources:2.3.3.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.webflow:spring-js:2.3.3.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.webflow:spring-webflow:2.3.3.RELEASE" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.9" />
         </element>
       </element>
     </root>

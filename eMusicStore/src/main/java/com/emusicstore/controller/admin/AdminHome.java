@@ -12,8 +12,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.List;
 
 /**
- * Created by Arthur on 2016-07-14.
+ * Created by Le on 1/24/2016.
  */
+
 @Controller
 @RequestMapping("/admin")
 public class AdminHome {
@@ -41,10 +42,8 @@ public class AdminHome {
     public String customerManagement(Model model) {
 
         List<Customer> customerList = customerService.getAllCustomers();
-        model.addAttribute("customerList",customerList);
+        model.addAttribute("customerList", customerList);
 
         return "customerManagement";
     }
-
-
 }

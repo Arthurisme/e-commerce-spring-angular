@@ -1,6 +1,5 @@
 package com.emusicstore.dao.impl;
 
-
 import com.emusicstore.dao.CartItemDao;
 import com.emusicstore.model.Cart;
 import com.emusicstore.model.CartItem;
@@ -19,44 +18,37 @@ import java.util.List;
 
 @Repository
 @Transactional
-public class CartItemDaoImpl implements CartItemDao {
+public class CartItemDaoImpl implements CartItemDao{
 
     @Autowired
     private SessionFactory sessionFactory;
 
-
-
-
-
-    public void addCartItem (CartItem cartItem) {
+    public void addCartItem(CartItem cartItem) {
         Session session = sessionFactory.getCurrentSession();
         session.saveOrUpdate(cartItem);
         session.flush();
     }
 
-
-    public void removeCartItem(CartItem cartItem){
+    public void removeCartItem (CartItem cartItem) {
         Session session = sessionFactory.getCurrentSession();
         session.delete(cartItem);
         session.flush();
     }
 
-    public void removeAllCartItems(Cart cart){
-     List<CartItem> cartItems = cart.getCartItems();
+    public void removeAllCartItems(Cart cart) {
+        List<CartItem> cartItems = cart.getCartItems();
 
-        for(CartItem item : cartItems){
+        for (CartItem item : cartItems) {
             removeCartItem(item);
         }
-
     }
 
-    public CartItem getCartItemByProductId (int productId){
+    public CartItem getCartItemByProductId (int productId) {
         Session session = sessionFactory.getCurrentSession();
         Query query = session.createQuery("from CartItem where productId = ?");
-        query.setInteger(0,productId);
+        query.setInteger(0, productId);
         session.flush();
 
         return (CartItem) query.uniqueResult();
-
     }
 }

@@ -7,18 +7,17 @@ import javax.persistence.OneToOne;
 import java.io.Serializable;
 
 /**
- * Created by Arthur on 2016-07-13.
+ * Created by Le on 1/24/2016.
  */
 @Entity
-public class ShippingAddress implements Serializable {
+public class ShippingAddress implements Serializable{
 
 
-    private static final long serialVersionUID = -6091579459463730482L;
+    private static final long serialVersionUID = 989191150380037359L;
 
     @Id
     @GeneratedValue
-    private int billingAddressId;
-
+    private int shippingAddressId;
     private String streetName;
     private String apartmentNumber;
     private String city;
@@ -29,12 +28,12 @@ public class ShippingAddress implements Serializable {
     @OneToOne
     private Customer customer;
 
-    public int getBillingAddressId() {
-        return billingAddressId;
+    public int getShippingAddressId() {
+        return shippingAddressId;
     }
 
-    public void setBillingAddressId(int billingAddressId) {
-        this.billingAddressId = billingAddressId;
+    public void setShippingAddressId(int shippingAddressId) {
+        this.shippingAddressId = shippingAddressId;
     }
 
     public String getStreetName() {
@@ -96,14 +95,12 @@ public class ShippingAddress implements Serializable {
     @Override
     public String toString() {
         return "ShippingAddress{" +
-                "billingAddressId=" + billingAddressId +
-                ", streetName='" + streetName + '\'' +
+                "streetName='" + streetName + '\'' +
                 ", apartmentNumber='" + apartmentNumber + '\'' +
                 ", city='" + city + '\'' +
                 ", state='" + state + '\'' +
                 ", country='" + country + '\'' +
                 ", zipCode='" + zipCode + '\'' +
-                ", customer=" + customer +
                 '}';
     }
 }

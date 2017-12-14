@@ -1,21 +1,23 @@
 package com.emusicstore.model;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import java.io.Serializable;
 
 /**
- * Created by Arthur on 2016-07-13.
+ * Created by Le on 1/24/2016.
  */
-@Entity
-public class BillingAddress implements Serializable {
 
+@Entity
+public class BillingAddress implements Serializable{
 
     private static final long serialVersionUID = -6091579459463730482L;
 
     @Id
     @GeneratedValue
     private int billingAddressId;
-
     private String streetName;
     private String apartmentNumber;
     private String city;
@@ -90,18 +92,15 @@ public class BillingAddress implements Serializable {
         this.customer = customer;
     }
 
-
     @Override
     public String toString() {
         return "BillingAddress{" +
-                "billingAddressId=" + billingAddressId +
-                ", streetName='" + streetName + '\'' +
+                "streetName='" + streetName + '\'' +
                 ", apartmentNumber='" + apartmentNumber + '\'' +
                 ", city='" + city + '\'' +
                 ", state='" + state + '\'' +
                 ", country='" + country + '\'' +
                 ", zipCode='" + zipCode + '\'' +
-                ", customer=" + customer +
                 '}';
     }
 }

@@ -5,21 +5,52 @@
        xmlns:webflow-config="http://www.springframework.org/schema/webflow-config"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd http://www.springframework.org/schema/webflow-config http://www.springframework.org/schema/webflow-config/spring-webflow-config.xsd">
 
+<!--H2:-->
+    <!--<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">-->
+        <!--<property name="driverClassName" value="org.h2.Driver" />-->
+        <!--&lt;!&ndash;<property name="url" value="jdbc:h2:tcp://localhost/~/test" />&ndash;&gt;-->
+        <!--<property name="url" value="jdbc:h2:mem:test;DB_CLOSE_DELAY=-1;INIT=CREATE SCHEMA IF NOT EXISTS DOCTORASSIST" />-->
+        <!--<property name="username" value="sa" />-->
+        <!--<property name="password" value="" />-->
+    <!--</bean>-->
+    <!---->
+
+    <!--<bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean" >-->
+        <!--<property name="dataSource" ref="dataSource"></property>-->
+        <!--<property name="hibernateProperties">-->
+            <!--<props>-->
+                <!--<prop key="hibernate.dialect">org.hibernate.dialect.H2Dialect</prop>-->
+                <!--<prop key="hibernate.hbm2ddl.auto">update</prop>-->
+                <!--<prop key="hibernate.show_sql">true</prop>-->
+                <!--<prop key="hibernate.format_sql">true</prop>-->
+            <!--</props>-->
+        <!--</property>-->
+        <!--<property name="packagesToScan">-->
+            <!--<list>-->
+                <!--<value>com.emusicstore</value>-->
+            <!--</list>-->
+        <!--</property>-->
+    <!--</bean>-->
+
+
+    <!--Mysql-->
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-        <property name="driverClassName" value="org.h2.Driver" />
-        <property name="url" value="jdbc:h2:tcp://localhost/~/test" />
-        <property name="username" value="sa" />
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+        <!--<property name="url" value="jdbc:h2:tcp://localhost/~/test" />-->
+        <property name="url" value="jdbc:mysql://localhost:3306/emusicshop1" />
+        <property name="username" value="root" />
         <property name="password" value="" />
     </bean>
+
 
     <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean" >
         <property name="dataSource" ref="dataSource"></property>
         <property name="hibernateProperties">
             <props>
-                <prop key="hibernate.dialect">org.hibernate.dialect.H2Dialect</prop>
-                <prop key="hibernate.hbm2ddl.auto">update</prop>
-                <prop key="hibernate.show_sql">true</prop>
-                <prop key="hibernate.format_sql">true</prop>
+                <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+                <!--<prop key="hibernate.hbm2ddl.auto">update</prop>-->
+                <!--<prop key="hibernate.show_sql">true</prop>-->
+                <!--<prop key="hibernate.format_sql">true</prop>-->
             </props>
         </property>
         <property name="packagesToScan">
@@ -41,13 +72,13 @@
         <security:intercept-url pattern="/admin/**" access="ROLE_ADMIN" />
         <security:intercept-url pattern="/customer/**" access="ROLE_USER" />
         <security:form-login
-                login-page="/login"
-                default-target-url="/product/productList/"
-                authentication-failure-url="/login?error"
-                username-parameter="username"
-                password-parameter="password" />
+            login-page="/login"
+            default-target-url="/"
+            authentication-failure-url="/login?error"
+            username-parameter="username"
+            password-parameter="password" />
         <security:logout
-                logout-success-url="/login?logout" />
+            logout-success-url="/login?logout" />
     </security:http>
 
     <security:authentication-manager>
@@ -71,5 +102,4 @@
     <bean id="flowHandlerAdapter" class="org.springframework.webflow.mvc.servlet.FlowHandlerAdapter">
         <property name="flowExecutor" ref="flowExecutor" />
     </bean>
-
 </beans>

@@ -7,11 +7,11 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 /**
- * Created by Arthur on 2016-07-13.
+ * Created by Le on 1/24/2016.
  */
-@Entity
-public class Customer implements Serializable {
 
+@Entity
+public class Customer implements Serializable{
 
     private static final long serialVersionUID = 5140900014886997914L;
 
@@ -19,19 +19,18 @@ public class Customer implements Serializable {
     @GeneratedValue
     private int customerId;
 
-    @NotEmpty(message="The customer name must not be null")
+    @NotEmpty (message = "The customer name must not be null.")
     private String customerName;
 
-    @NotEmpty(message="The customer email must not be null")
+    @NotEmpty (message = "The customer email must not be null.")
     private String customerEmail;
     private String customerPhone;
 
-    @NotEmpty(message="The customer username must not be null")
+    @NotEmpty (message = "The customer username must not be null.")
     private String username;
 
-    @NotEmpty(message="The customer password must not be null")
+    @NotEmpty (message = "The customer password must not be null.")
     private String password;
-
 
     private boolean enabled;
 
@@ -44,7 +43,7 @@ public class Customer implements Serializable {
     private ShippingAddress shippingAddress;
 
     @OneToOne
-    @JoinColumn(name="cartId")
+    @JoinColumn(name = "cartId")
     @JsonIgnore
     private Cart cart;
 

@@ -13,8 +13,9 @@ import java.io.IOException;
 import java.util.List;
 
 /**
- * Created by Arthur on 2016-07-14.
+ * Created by Le on 1/24/2016.
  */
+
 @Controller
 @RequestMapping("/product")
 public class ProductController {
@@ -22,10 +23,10 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
-    @RequestMapping("/productList/all ")
-    public String getProducts(Model model){
+    @RequestMapping("/productList/all")
+    public String getProducts(Model model) {
         List<Product> products = productService.getProductList();
-        model.addAttribute("products",products);
+        model.addAttribute("products", products);
 
         return "productList";
     }
@@ -39,12 +40,11 @@ public class ProductController {
     }
 
     @RequestMapping("/productList")
-    public String getProductByCategory(@RequestParam("searchCondition") String searchCondition,   Model model){
+    public String getProductByCategory(@RequestParam("searchCondition") String searchCondition, Model model) {
         List<Product> products = productService.getProductList();
-        model.addAttribute("products",products);
-        model.addAttribute("searchCondition",searchCondition);
+        model.addAttribute("products", products);
+        model.addAttribute("searchCondition", searchCondition);
 
         return "productList";
     }
-
 }

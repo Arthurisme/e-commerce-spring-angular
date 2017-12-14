@@ -6,7 +6,7 @@
 <div class="container-wrapper">
     <div class="container">
         <div class="page-header">
-            <h1>Customer management</h1>
+            <h1>Customer Management Page</h1>
 
             <p class="lead">This is the customer management page.</p>
         </div>
@@ -24,7 +24,6 @@
             </thead>
             <c:forEach items="${customerList}" var="customer">
                 <tr>
-
                     <td>${customer.customerName}</td>
                     <td>${customer.customerEmail}</td>
                     <td>${customer.customerPhone}</td>

@@ -4,10 +4,9 @@ import com.emusicstore.model.Cart;
 import com.emusicstore.model.CartItem;
 
 /**
- * Created by Arthur on 2016-07-14.
+ * Created by Le on 1/25/2016.
  */
 public interface CartItemService {
-
 
     void addCartItem(CartItem cartItem);
 
@@ -16,6 +15,4 @@ public interface CartItemService {
     void removeAllCartItems(Cart cart);
 
     CartItem getCartItemByProductId (int productId);
-
-
 }

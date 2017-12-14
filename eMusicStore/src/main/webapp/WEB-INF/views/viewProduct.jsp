@@ -8,21 +8,22 @@
         <div class="page-header">
             <h1>Product Detail</h1>
 
-            <p class="lead">Here is the detail information of the product!</p>
+            <p class="lead">Here is the detail information of the product!        System.out.println(path);
+            </p>
         </div>
 
         <div class="container" ng-app = "cartApp">
             <div class="row">
                 <div class="col-md-5">
                     <img src="<c:url value="/resources/images/${product.productId}.png" /> " alt="image"
-                         style="width:100%"/>
+                             style="width:100%"/>
                 </div>
 
                 <div class="col-md-5">
                     <h3>${product.productName}</h3>
                     <p>${product.productDescription}</p>
                     <p>
-                        <strong>Manufacturer</strong> : ${product.productManufacturer}
+                       <strong>Manufacturer</strong> : ${product.productManufacturer}
                     </p>
                     <p>
                         <strong>Category</strong> : ${product.productCategory}

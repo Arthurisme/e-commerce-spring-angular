@@ -7,12 +7,12 @@
         var searchCondition = '${searchCondition}';
 
         $('.table').DataTable({
-            "lengthMenu": [[1,2,3,5,10,-1],[1,2,3,5,10,"All"]],
-            "oSearch":{"sSearch":searchCondition}
+            "lengthMenu": [[1,2,3,5,10,-1], [1,2,3,5,10, "All"]],
+            "oSearch": {"sSearch": searchCondition}
         });
     });
-</script>
 
+</script>
 
 <div class="container-wrapper">
     <div class="container">
@@ -37,18 +37,14 @@
                 <tr>
                     <td><img src="<c:url value="/resources/images/${product.productId}.png" /> " alt="image"
                              style="width:100%"/></td>
-                    <%--<td> image</td>--%>
-
                     <td>${product.productName}</td>
                     <td>${product.productCategory}</td>
                     <td>${product.productCondition}</td>
                     <td>${product.productPrice} USD</td>
-                    <td><a href="<spring:url value="/product/viewProduct/${product.productId}" />">
-                        <span class="glyphicon glyphicon-info-sign"></span></a></td>
-                    <%--<td><a href="<spring:url value="/productList/viewProduct/${product.productId}" />"--%>
-                    <%--><span class="glyphicon glyphicon-info-sign"></span></a></td>--%>
+                    <td><a href="<spring:url value="/product/viewProduct/${product.productId}" />"
+                    ><span class="glyphicon glyphicon-info-sign"></span></a></td>
                 </tr>
             </c:forEach>
         </table>
 
-        <%@include file="/WEB-INF/views/template/footer.jsp" %>
+<%@include file="/WEB-INF/views/template/footer.jsp" %>

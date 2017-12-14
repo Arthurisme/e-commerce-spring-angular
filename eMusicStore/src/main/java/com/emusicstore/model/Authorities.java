@@ -1,14 +1,13 @@
 package com.emusicstore.model;
 
-import javax.annotation.Generated;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.IdClass;
 
 /**
- * Created by Arthur on 2016-07-13.
+ * Created by Le on 1/24/2016.
  */
+
 @Entity
 public class Authorities {
 

@@ -6,11 +6,11 @@
     $(document).ready(function(){
 
         $('.table').DataTable({
-            "lengthMenu": [[1,2,3,5,10,-1],[1,2,3,5,10,"All"]]
-         });
+            "lengthMenu": [[1,2,3,5,10,-1], [1,2,3,5,10, "All"]]
+        });
     });
-</script>
 
+</script>
 
 <div class="container-wrapper">
     <div class="container">
@@ -35,28 +35,21 @@
                 <tr>
                     <td><img src="<c:url value="/resources/images/${product.productId}.png" /> " alt="image"
                              style="width:100%"/></td>
-                    <%--<td> image</td>--%>
-
                     <td>${product.productName}</td>
                     <td>${product.productCategory}</td>
                     <td>${product.productCondition}</td>
                     <td>${product.productPrice} USD</td>
-                    <td>
-                        <a href="<spring:url value="/product/viewProduct/${product.productId}" />"
-                        ><span class="glyphicon glyphicon-info-sign"></span></a>
+                    <td><a href="<spring:url value="/product/viewProduct/${product.productId}" />"
+                    ><span class="glyphicon glyphicon-info-sign"></span></a>
                         <a href="<spring:url value="/admin/product/deleteProduct/${product.productId}" />"
                         ><span class="glyphicon glyphicon-remove"></span></a>
                         <a href="<spring:url value="/admin/product/editProduct/${product.productId}" />"
                         ><span class="glyphicon glyphicon-pencil"></span></a>
                     </td>
-
-                    <%--<td><a href="<spring:url value="/productList/viewProduct/${product.productId}" />"--%>
-                    <%--><span class="glyphicon glyphicon-info-sign"></span></a></td>--%>
                 </tr>
             </c:forEach>
         </table>
 
         <a href="<spring:url value="/admin/product/addProduct" />" class="btn btn-primary">Add Product</a>
 
-
-    <%@include file="/WEB-INF/views/template/footer.jsp" %>
+        <%@include file="/WEB-INF/views/template/footer.jsp" %>

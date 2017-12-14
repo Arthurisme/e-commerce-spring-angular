@@ -6,36 +6,33 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
- * Created by Arthur on 2016-07-14.
+ * Created by Le on 1/24/2016.
  */
+
 @Controller
 public class HomeController {
 
     @RequestMapping("/")
-    public String home(){
+    public String home() {
         return "home";
     }
 
-    @RequestMapping("/about")
-    public String about(){
-        return "about";
-    }
-
     @RequestMapping("/login")
-    public String login(@RequestParam(value="error", required = false) String error,
-                        @RequestParam (value="logout", required = false) String logout, Model model
-    ) {
-
-        if(error != null) {
-            model.addAttribute("error", "Invalid username and password!");
+    public String login(@RequestParam(value="error", required = false) String error, @RequestParam(value="logout",
+            required = false) String logout, Model model) {
+        if (error!=null) {
+            model.addAttribute("error", "Invalid username and password");
         }
 
-        if(logout!= null) {
+        if(logout!=null) {
             model.addAttribute("msg", "You have been logged out successfully.");
         }
 
         return "login";
     }
 
-
+    @RequestMapping("/about")
+    public String about() {
+        return "about";
+    }
 }

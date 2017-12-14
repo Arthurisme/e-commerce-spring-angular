@@ -1,18 +1,13 @@
 package com.emusicstore.service;
 
-import com.emusicstore.model.Customer;
 import com.emusicstore.model.CustomerOrder;
 
-import java.util.List;
-
 /**
- * Created by Arthur on 2016-07-14.
+ * Created by Le on 1/25/2016.
  */
 public interface CustomerOrderService {
 
     void addCustomerOrder(CustomerOrder customerOrder);
 
-    double getCustomerOrderGrandTotal (int cartId);
-
-
+    double getCustomerOrderGrandTotal(int cartId);
 }
