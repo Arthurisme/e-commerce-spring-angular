@@ -45,11 +45,11 @@
       <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="41" column="45" lean-forward="false" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
+            <state relative-caret-position="282">
+              <caret line="51" column="42" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding>
-                <marker date="1513275237320" expanded="true" signature="4351:4413" ph="..." />
-                <marker date="1513275237320" expanded="true" signature="4480:4544" ph="..." />
+                <marker date="1513278301231" expanded="true" signature="4396:4458" ph="..." />
+                <marker date="1513278301231" expanded="true" signature="4525:4589" ph="..." />
               </folding>
             </state>
           </provider>
@@ -152,51 +152,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
               <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TEST.PUBLIC.USERS" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/a0ec7986/111fc613-806e-4219-954f-24362d08b8cb/TEST.PUBLIC.USERS">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TEST.PUBLIC.AUTHORITIES" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/a0ec7986/111fc613-806e-4219-954f-24362d08b8cb/TEST.PUBLIC.AUTHORITIES">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TEST.INFORMATION_SCHEMA.USERS" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/a0ec7986/111fc613-806e-4219-954f-24362d08b8cb/TEST.INFORMATION_SCHEMA.USERS">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -320,7 +275,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="248" />
-    <option name="y" value="113" />
+    <option name="y" value="154" />
     <option name="width" value="1555" />
     <option name="height" value="921" />
   </component>
@@ -582,9 +537,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1160,14 +1115,15 @@
       <workItem from="1456573171024" duration="1656000" />
       <workItem from="1513269937452" duration="5098000" />
       <workItem from="1513275458126" duration="272000" />
+      <workItem from="1513276090260" duration="1809000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100604000" />
+    <option name="totallyTimeSpent" value="102413000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="248" y="113" width="1555" height="921" extended-state="0" />
+    <frame x="248" y="154" width="1555" height="921" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1189,11 +1145,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36351705" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36351705" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23946488" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24280937" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1591,45 +1547,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/a0ec7986/111fc613-806e-4219-954f-24362d08b8cb/TEST.PUBLIC.AUTHORITIES">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/a0ec7986/111fc613-806e-4219-954f-24362d08b8cb/TEST.PUBLIC.USERS">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/a0ec7986/111fc613-806e-4219-954f-24362d08b8cb/TEST.INFORMATION_SCHEMA.USERS">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="dbDummy://dbtable:/a0ec7986/111fc613-806e-4219-954f-24362d08b8cb/TEST.PUBLIC.AUTHORITIES" />
+    <entry file="dbDummy://dbtable:/a0ec7986/111fc613-806e-4219-954f-24362d08b8cb/TEST.PUBLIC.USERS" />
+    <entry file="dbDummy://dbtable:/a0ec7986/111fc613-806e-4219-954f-24362d08b8cb/TEST.INFORMATION_SCHEMA.USERS" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="950">
@@ -1664,11 +1584,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="41" column="45" lean-forward="false" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
+        <state relative-caret-position="282">
+          <caret line="51" column="42" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding>
-            <marker date="1513275237320" expanded="true" signature="4351:4413" ph="..." />
-            <marker date="1513275237320" expanded="true" signature="4480:4544" ph="..." />
+            <marker date="1513278301231" expanded="true" signature="4396:4458" ph="..." />
+            <marker date="1513278301231" expanded="true" signature="4525:4589" ph="..." />
           </folding>
         </state>
       </provider>
